@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --border_rad: 10px;
+    --back-rad: 15px;
 }
 *{
     margin: 0;
@@ -56,7 +57,7 @@ body{
     height: 250px;
     position: absolute;
     z-index: 2;
-    border-radius: var(--border_rad);
+    border-radius: var(--back-rad);
     overflow: hidden;
 }
 
@@ -95,20 +96,50 @@ body{
 .menu_icon{
     height: 5px;
     margin-top: 10px;
+    cursor: pointer;
+}
+.hours{
+    display: flex;
+    width: 115px;
+    position: absolute;
+    top: 34%;
+    left: 13%;
+}
+.hrs{
+    font-weight: 300;
+    font-size: 3.5rem;
+    left: 14%;
+    top: 35%;
+    margin-left: 0.15em;
+}
+.bottomHour{
+    margin-left: 7px;
+    color: #bdc1ff85;
 }
 .time{
-    position: absolute;
     font-weight: 300;
     font-size: 3.5rem;
     left: 14%;
     top: 35%;
 }
-.last_w{
+.bottomText{
+    display: flex;
     position: absolute;
+    top: 70%;
+    left: 14%;
+}
+.last_w{
     font-weight: 200;
     left: 15%;
     top: 70%;
-
+    color: #bdc1ff85;
+}
+.bottomHrs{
+    margin-left: 7px;
+    color: #bdc1ff85;
+}
+.moving{
+    margin-left: 9px;
 }
 .card2{
     grid-area: b;
@@ -182,4 +213,5 @@ li{
 }
 a{
     text-decoration: none;
+    color: hsl(235, 45%, 61%);
 }
