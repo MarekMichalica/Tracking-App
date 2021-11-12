@@ -135,6 +135,13 @@ function weeklyFunction()
     document.getElementById("exercise_time").innerHTML = exerJ.weekly.current;
     document.getElementById("social_time").innerHTML = socJ.weekly.current;
     document.getElementById("self_time").innerHTML = selfJ.weekly.current;
+
+    document.getElementById("work_btm").innerHTML = wJ.weekly.previous;
+    document.getElementById("play_btm").innerHTML = playJ.weekly.previous;
+    document.getElementById("std_btm").innerHTML = studyJ.weekly.previous;
+    document.getElementById("exer_btm").innerHTML = exerJ.weekly.previous;
+    document.getElementById("soc_btm").innerHTML = socJ.weekly.previous;
+    document.getElementById("self_btm").innerHTML = selfJ.weekly.previous;
 }
 function monthlyFunction()
 {
@@ -149,4 +156,11 @@ function monthlyFunction()
     document.getElementById("exercise_time").innerHTML = exerJ.monthly.current;
     document.getElementById("social_time").innerHTML = socJ.monthly.current;
     document.getElementById("self_time").innerHTML = selfJ.monthly.current;
+
+    document.getElementById("work_btm").innerHTML = wJ.monthly.previous;
+    document.getElementById("play_btm").innerHTML = playJ.monthly.previous;
+    document.getElementById("std_btm").innerHTML = studyJ.monthly.previous;
+    document.getElementById("exer_btm").innerHTML = exerJ.monthly.previous;
+    document.getElementById("soc_btm").innerHTML = socJ.monthly.previous;
+    document.getElementById("self_btm").innerHTML = selfJ.monthly.previous;
 }

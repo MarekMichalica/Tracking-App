@@ -28,7 +28,6 @@ body{
 }
 .profile_Card{
     grid-area: p;
-    background-color: white;
     border-radius: 20px;
 }
 .info_card{
@@ -214,4 +213,101 @@ li{
 a{
     text-decoration: none;
     color: hsl(235, 45%, 61%);
+}
+@media screen and (max-width:1300px){
+    body{
+        overflow-x: hidden;
+    }
+    .cards{
+        margin-top: 40em;
+        display:grid;
+        width: 400px;
+        height: 1900px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "p"
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f";
+    }
+    .card2,.card3,.card4,.card5,.card6{
+        margin-top: -10em;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6{
+        margin-bottom: 10em;
+    }
+    .front,.background1,.background2,.background3,.background4,.background5,.background6{
+        width: 400px;
+    }
+    .background1,.background2,.background3,.background4,.background5,.background6{
+        height: 200px;
+    }
+    .info_card{
+        display: flex;
+        height: 150px;
+    }
+    .jeremy{
+        width: 60px;
+        height: 60px;
+        top: 26%;
+        left: 10%;
+    }
+    .name{
+        position: absolute;
+        top: 43%;
+        left: 34%;
+        width: 300px;
+        font-size: 2rem;
+    }
+    h3{
+        position: relative;
+        width: 200px;
+        left: 17%;
+        top: 29%;
+    }
+    .menu{
+        margin-top: -1.8em;
+        height: 100px;
+        width: 400px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        margin-left: -3.44em;
+    }
+    .front{
+        height: 170px;
+    }
+    .profile_Card{
+        margin-bottom: -15em;
+        width: 400px
+    }
+    .card_title,.card_title1{
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        font-size: 1.5rem;
+    }
+    .moving{
+        margin-left: 0em;
+    }
+    .menu_icon{
+        position: absolute;
+        left: 84%;
+        top: 22%;
+    }
+    .hours{
+        position: absolute;
+        left: 9%;
+        top: 45%;
+    }
+    .bottomText{
+        position: absolute;
+        left: 60%;
+        top: 62%;
+    }
 }
